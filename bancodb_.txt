@@ -1,0 +1,25 @@
+CREATE DATABASE BancoDB;
+
+USE BancoDB;
+
+-- Tabla Movimientos
+CREATE TABLE Movimientos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    valor DECIMAL(10, 2),
+    numero_cuenta VARCHAR(20),
+    cuenta_origen VARCHAR(20),
+    fecha DATE,
+    tipo_transaccion VARCHAR(50)
+);
+CREATE TABLE Cuentas (
+    numero_cuenta VARCHAR(20) PRIMARY KEY,
+    tipo_cuenta VARCHAR(50),
+    saldo DECIMAL(10, 2),
+    titular VARCHAR(100)
+);
+
+-- Tabla Tipo_Transaccion
+CREATE TABLE Tipo_Transaccion (
+    id INT PRIMARY KEY,
+    descripcion VARCHAR(100)
+);

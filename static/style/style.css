@@ -1,0 +1,131 @@
+/*-------formulario transacciones--------*/
+#titulo {
+  text-align: center;
+  margin-top: 20px;
+  text-size-adjust: 2;
+}
+
+#cancelar-cuenta {
+  background-color: #ff7f41;
+}
+
+#alert {
+  background-color: #ff7f41;
+  color: #2c2a29;
+}
+
+@keyframes hideElement {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+#alert {
+  animation: hideElement 0.3s ease-in-out 5s forwards;
+}
+
+body {
+  background-color: #2c2a29;
+}
+
+.registration-form .item:focus {
+  outline: none;
+  border: 2px solid #b263d6;
+}
+
+.registration-form {
+  padding: 50px 0;
+}
+
+.registration-form form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon {
+  text-align: center;
+  background-color: #2c2a29;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 100px;
+}
+
+.registration-form .item {
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.registration-form .create-account {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ffdb00;
+  border: none;
+  color: #2c2a29;
+  margin-top: 20px;
+}
+
+.registration-form .cancelar-cuenta {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #2c2a29;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+/* Footer */
+section {
+  background-color: #2c2a29;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #b263d6;
+}
+
+footer svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
